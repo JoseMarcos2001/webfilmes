@@ -31,8 +31,9 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                   <li><a class="dropdown-item" href="animação.html">Animação</a></li>
+                  <li><a class="dropdown-item" href="comédia.html">Comédia</a></li>
                   <li><a class="dropdown-item" href="ficção.html">Ficção científica</a></li>
-                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="terror.html">Terror</a></li>
                   <li><a class="dropdown-item" href="#">3</a></li>
                   
                 </ul>
@@ -40,15 +41,19 @@
               
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input id="searchbar" class="form-control me-2" type="text" placeholder="Search" aria-label="Search" onkeyup="search()">
+              
             </form>
           </div>
         </div>
       </nav>
                                     <!-- FILMES -->
+    
+      
+      <div class="container">
     <div class="row">
-        <div class="col-sm-2">
+      
+        <div class="col-sm-3">
           <div class="card">
             <img src="https://upload.wikimedia.org/wikipedia/pt/0/0d/Barbie_12_Dancing_Princesses.png" class="card-img-left" alt="...">
             <div class="card-body">
@@ -57,9 +62,10 @@
             </div>
           </div>
         </div>
+      
 
-        
-          <div class="col-sm-2">
+     
+          <div class="col-sm-3">
             <div class="card">
               <img src="https://imgs.search.brave.com/QgDBYLFAUVDkFa_Ej1avM6r3RaiZ82GK3WQ1sglvRAQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzEyODAvL2xK/eDhHbW95RTJtTlV4/dllCbHI0QVJyejN6/LmpwZw" class="card-img-left" alt="...">
               <div class="card-body">
@@ -68,26 +74,100 @@
               </div>
             </div>
           </div> 
+        
 
-          <div class="col-sm-2">
+          <div class="col-sm-3">
             <div class="card">
               <img src="https://imgs.search.brave.com/OaN_eXgur0VqFMcmRJePcgGBn8LOBXP7OibzZVrTgEk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92aXpl/ci50di9jb250ZW50/L21vdmllcy9wb3N0/ZXJQdC8zNDIvMjg3/NDUuanBn" class="card-img-left" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Barbie em o Lago dos Cisnes.</h5><br>
+                <h5 class="card-title">Barbie em o Lago dos Cisnes.</h5>
                 <a href="https://drive.google.com/file/d/1JDnwfh65qgUXsPdK0C-da0VZ7J8OISCt/preview" class="btn btn-primary" id="filmes">Assistir</a>
               </div>
             </div>
           </div>
           
-          <div class="col-sm-2">
+          <div class="col-sm-3">
             <div class="card">
               <img src="https://imgs.search.brave.com/1NYQHtGfOehoJB4aPEvS6FvWLfg2eCSwD72yOeTc-yw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzEyODAvL3lS/bEI2TXUxTkxjY3Ay/VVA2UUhBeEoxdWx3/bC5qcGc" class="card-img-left" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Diario da barbie.</h5><br>
+                <h5 class="card-title">Diário da Barbie.</h5>
                 <a href="https://drive.google.com/file/d/113a_Zpwc29DIy4oPZst4sjhVgmUy749b/preview" class="btn btn-primary" id="filmes">Assistir</a>
               </div>
             </div>
           </div> 
 
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://imgs.search.brave.com/HE3kTMtUpLGKxqw_guB4l3duU7RNbYLDUGqm4SLxQZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92aXpl/ci50di9jb250ZW50/L21vdmllcy9wb3N0/ZXJQdC8zNDIvMjg3/NTAuanBn" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Barbie o Quebra Nozes.</h5>
+                <a href="https://drive.google.com/file/d/1KDSMCM9RQlUsuCY_KnjeDTbwCUUOkRnx/preview" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://imgs.search.brave.com/Z1p9HsbdOQ7MoCVccGggSGDU_cPCSXv3AZgtU6o4AN4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzljLzM4/L2YwLzljMzhmMDcy/NmM2YjMyYTk2MTMx/NzBjYWFmNTIxMDRh/LmpwZw" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ratatouille.</h5>
+                <a href="https://drive.google.com/file/d/0B7h6w2STaJk6Uy1xWml0TWk4bDA/preview?resourcekey=0-dFZsMEx19Amfs4FWH2MTkA" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/pt/9/90/Hot_Wheels_AcceleRacers_Ignition.png?20180804013534" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hot Wheels: AcceleRacers - Ignition.</h5>
+                <a href="https://onedrive.live.com/?authkey=%21AL9a3lomvUHSrzs&cid=457DE726FFCA7DEB&id=457DE726FFCA7DEB%2143533&parId=457DE726FFCA7DEB%2143520&o=OneUp" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/5b/Hot_Wheels_AcceleRacers_The_Speed_of_Silence.png/250px-Hot_Wheels_AcceleRacers_The_Speed_of_Silence.png" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hot Wheels: AcceleRacers - The Speed of Silence.</h5>
+                <a href="https://onedrive.live.com/?authkey=%21AL9a3lomvUHSrzs&cid=457DE726FFCA7DEB&id=457DE726FFCA7DEB%2143534&parId=457DE726FFCA7DEB%2143520&o=OneUp" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/83/Hot_Wheels_AcceleRacers_Breaking_Point.png/250px-Hot_Wheels_AcceleRacers_Breaking_Point.png" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hot Wheels: AcceleRacers - Breaking Point.</h5>
+                <a href="https://onedrive.live.com/?authkey=%21AL9a3lomvUHSrzs&cid=457DE726FFCA7DEB&id=457DE726FFCA7DEB%2143537&parId=457DE726FFCA7DEB%2143520&o=OneUp" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/82/Hot_Wheels_AcceleRacers_The_Ultimate_Race.png/250px-Hot_Wheels_AcceleRacers_The_Ultimate_Race.png" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hot Wheels: AcceleRacers - The Ultimate Race.</h5>
+                <a href="https://onedrive.live.com/?authkey=%21AL9a3lomvUHSrzs&cid=457DE726FFCA7DEB&id=457DE726FFCA7DEB%2143540&parId=457DE726FFCA7DEB%2143520&o=OneUp" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://ih1.redbubble.net/image.826095970.7210/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" class="card-img-left" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hot Wheels: AcceleRacers - The Ultimate Race.</h5>
+                <a href="https://onedrive.live.com/?authkey=%21AL9a3lomvUHSrzs&cid=457DE726FFCA7DEB&id=457DE726FFCA7DEB%2143550&parId=457DE726FFCA7DEB%2143520&o=OneUp" class="btn btn-primary" id="filmes">Assistir</a>
+              </div>
+            </div>
+          </div> 
+           
+    </div>
+      
+ <script src="script.js"></script>         
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
