@@ -1,69 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Filmes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="https://imgs.search.brave.com/tGGzZix-X6mRGgRdwnrLXvWCojM7Mx5ozRIUZSfvbS0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9maWZ0/aHN1bi5jb20vY2Ru/L3Nob3AvcHJvZHVj/dHMvMjJzdG1kMDA0/OTFhLTAwMS1tYW5k/by1ncm9ndS1iaWct/ZmFjZS1yd3RtMmFt/bXAyLW1lLTI1MC1z/d2F0Y2hfODAweC5q/cGc_dj0xNjY3MzUy/MzM5" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    Web Filmes
-                  </a>
-                </div>
-              </nav>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                Lista de gêneros cinematográficos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                  <li><a class="dropdown-item" href="animação.html">Animação</a></li>
-                  <li><a class="dropdown-item" href="comédia.html">Comédia</a></li>
-                  <li><a class="dropdown-item" href="ficção.html">Ficção científica</a></li>
-                  <li><a class="dropdown-item" href="terror.html">Terror</a></li>
-                  <li><a class="dropdown-item" href="series.html">Séries</a></li>
-                  
-                </ul>
-              </li>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="search()">
-              
-            </form>
-          </div>
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5507/5507847.png"
+              alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Web Filmes
+          </a>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
+              Lista de gêneros cinematográficos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <li><a class="dropdown-item" href="animação.html">Animação</a></li>
+              <li><a class="dropdown-item" href="açao.html">Ação</a></li>
+              <li><a class="dropdown-item" href="biografico.html">Biográfico</a></li>
+              <li><a class="dropdown-item" href="comédia.html">Comédia</a></li>
+              <li><a class="dropdown-item" href="ficção.html">Ficção científica</a></li>
+              <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+              <li><a class="dropdown-item" href="series.html">Séries</a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            onkeyup="search()">
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
 
 
       <div class="col-sm-3">
-        <div class="card" >
-          <img src="https://imgs.search.brave.com/P9J5tBXesVD1fANX9ICd0Ocjr3zLHdnNZVzmR-OpBbM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvcHQvdGh1bWIv/My8zMS9DaGFybGll/X2FuZF90aGVfQ2hv/Y29sYXRlX0ZhY3Rv/cnkuanBnLzUxMnB4/LUNoYXJsaWVfYW5k/X3RoZV9DaG9jb2xh/dGVfRmFjdG9yeS5q/cGc" class="card-img-top" alt="...">
+        <div class="card">
+          <img
+            src="https://imgs.search.brave.com/P9J5tBXesVD1fANX9ICd0Ocjr3zLHdnNZVzmR-OpBbM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvcHQvdGh1bWIv/My8zMS9DaGFybGll/X2FuZF90aGVfQ2hv/Y29sYXRlX0ZhY3Rv/cnkuanBnLzUxMnB4/LUNoYXJsaWVfYW5k/X3RoZV9DaG9jb2xh/dGVfRmFjdG9yeS5q/cGc"
+            class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">A Fantástica Fábrica de Chocolate</h5>
-          <a href="https://photos.google.com/share/AF1QipNtLmD4EJRec6ukUFOZTGXlcW4kzhhr2bu09grCe4GkNMgOOuE6JWq7g8i1zlCZvw/photo/AF1QipM0V3jEUECgG6roOODMMRxbd-vMXrL6LR3Ad29p?key=Vml5UVhmR2xha1dJaGZoVGtxS29QVlV6bS1JMWh3" class="btn btn-primary" id="filmes">Assistir</a>
+            <a href="https://photos.google.com/share/AF1QipNtLmD4EJRec6ukUFOZTGXlcW4kzhhr2bu09grCe4GkNMgOOuE6JWq7g8i1zlCZvw/photo/AF1QipM0V3jEUECgG6roOODMMRxbd-vMXrL6LR3Ad29p?key=Vml5UVhmR2xha1dJaGZoVGtxS29QVlV6bS1JMWh3"
+              class="btn btn-primary" id="filmes">Assistir</a>
           </div>
         </div>
       </div>
-    </div>
+    
 
+  
+
+
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src="https://media.fstatic.com/f_EjfGmfsKGsMJk120T99NGQ7QY=/322x478/smart/filters:format(webp)/media/movies/covers/2019/03/poster-cartaz-auto-da-compadecida-filme-decorativo-arte-a3-D_NQ_NP_edytvhx.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">O Auto da Compadecida</h5>
+            <a href="https://drive.google.com/file/d/11iyRorX75Je8zMoVKtikneVNPN2arTtp/preview"
+              class="btn btn-primary" id="filmes">Assistir</a>
+          </div>
+        </div>
       </div>
-    </div>
- <script src="script.js"></script>     
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+      
+      <div class="col-sm-3">
+        <div class="card">
+          <img
+            src=""
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nome filme</h5>
+            <a href=""
+              class="btn btn-primary" id="filmes">Assistir</a>
+          </div>
+        </div>
+      </div>
+
+      
+    
+
+  </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
